@@ -1,0 +1,1511 @@
+/* colors 
+#DBFA6D - yellow
+#1C1B20 - black
+#FF5851 - red
+*/
+
+a:visited,
+a:link,
+a:active {
+  color: #1c1b20;
+  ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #1c1b20;
+}
+
+div {
+  display: block;
+}
+
+/* pageHome */
+
+div.pageHome {
+  /* background-color: #999; */
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* borders */
+
+div.pageHome div.borders div.top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 40px;
+  z-index: 100;
+}
+
+div.pageHome div.borders div.bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  height: 40px;
+  z-index: 100;
+}
+
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  transition: 0.3s;
+}
+
+.leftHov {
+  width: 90px;
+}
+
+div.pageHome div.borders div.right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* header */
+
+.header .name {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  width: 60px;
+  height: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 40px;
+  color: #1c1b20;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header a:visited {
+  color: #1c1b20;
+}
+
+/* menu */
+
+.divMenu {
+  position: fixed;
+  top: 40px;
+  left: -180%;
+  z-index: 99;
+  width: 80%;
+  height: 100vh;
+  outline: 500px hsla(2, 100%, 66%, 1) solid;
+  /* box-shadow: 300px 0px 0px 0px hsla(2, 100%, 66%, 0.9); */
+  background-color: #fff;
+  /* display: none; */
+  overflow: hidden;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.8s;
+}
+
+.divMenuClick {
+  left: 40px;
+}
+
+ul.menuNav {
+  list-style-type: none;
+  /* position: absolute;
+  top: 40px;
+  left: 40px; */
+  /* padding-bottom: 30%; */
+  padding-left: 15%;
+  font-size: 3rem;
+  font-weight: bolder;
+  /* background-color: #999; */
+  transition: 1s;
+}
+
+.menuNav a {
+  transition: 0.3s;
+}
+
+.menuNav a:visited,
+.menuNav a:link,
+.menuNav a:active {
+  color: #1c1b20;
+  ;
+}
+
+.menuNav a.home {
+  background-color: hsla(0, 100%, 50%, 0.45);
+  box-shadow: 0px 11px #fff inset, 0px -11px #fff inset;
+  display: inline-block;
+  width: 120px;
+  /* text-align: center; */
+  /* padding: 0 auto; */
+}
+
+.menuNav a.values:hover {
+  background-color: hsla(145, 100%, 31%, 0.45);
+  box-shadow: 0px 11px #fff inset, 0px -11px #fff inset;
+  display: inline-block;
+  width: 120px;
+  /* text-align: center; */
+  /* padding: 0 auto; */
+}
+
+.menuNav a.jobs:hover {
+  background-color: hsla(32, 100%, 50%, 0.45);
+  box-shadow: 0px 11px #fff inset, 0px -11px #fff inset;
+  display: inline-block;
+  width: 120px;
+  /* text-align: center; */
+  /* padding: 0 auto; */
+}
+
+ul.menuNav li a {
+  text-decoration: none;
+}
+
+ul.menuNav li {
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+ul.socialMenu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  position: fixed;
+  bottom: 45%;
+  left: 40px;
+  /* padding-bottom: 40%;
+  padding-left: 15%; */
+  font-size: 1.3rem;
+  background-color: #999;
+  display: none;
+}
+
+div.contact {
+  /* position: absolute;
+  top: 40px;
+  left: 40px; */
+  padding-top: 10%;
+  padding-left: 15%;
+  font-size: 1.3rem;
+  /* background-color: #666; */
+}
+
+div.contact a {
+  font-weight: bold;
+}
+
+div.contact a:visited {
+  color: #1c1b20;
+}
+
+/* mainMenu */
+
+.mainMenu {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%) rotate(270deg);
+  width: 100px;
+  height: 100px;
+  /* background-color: #999; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.stripeCont {
+  width: 14px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  /* background-color: #333; */
+}
+
+.stripe1 {
+  width: 2px;
+  height: 14px;
+  background-color: #1c1b20;
+  transition: 0.3s;
+}
+
+.stripe2 {
+  width: 2px;
+  height: 22px;
+  background-color: #1c1b20;
+  transition: 0.3s;
+}
+
+.stripe3 {
+  width: 2px;
+  height: 18px;
+  background-color: #1c1b20;
+  transition: 0.3s;
+}
+
+.menu {
+  padding-top: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.stripe1Hov {
+  height: 20px;
+}
+
+.stripe2Hov {
+  height: 36px;
+}
+
+.stripe3Hov {
+  height: 26px;
+}
+
+.stripeContClick {
+  justify-content: center;
+}
+
+.stripe1Click {
+  height: 20px;
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.stripe2Click {
+  display: none;
+}
+
+.stripe3Click {
+  height: 20px;
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.menuTextClick {
+  opacity: 0;
+  /* display: none; */
+}
+
+/* .stripeContClick {
+  justify-content: center;
+} */
+
+/* .menuTextClick {
+  opacity: 0;
+} */
+
+/* scrollLeft */
+
+.header .scrollLeft {
+  position: fixed;
+  bottom: -55px;
+  left: 10px;
+  z-index: 101;
+  width: 30px;
+  height: 80px;
+  font-size: 0.8rem;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 40px;
+  color: transparent;
+  text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.8);
+}
+
+.header .scrollLeftBottom {
+  bottom: 55px;
+}
+
+.scrollLeft i {
+  position: fixed;
+  top: -25px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  animation-name: move;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+    top: -25px;
+  }
+
+  100% {
+    top: -35px;
+  }
+}
+
+/* scroll right */
+
+.header .scrollRight {
+  position: fixed;
+  bottom: -100px;
+  right: 40px;
+  z-index: 101;
+  /* z-index: 110; */
+  width: 30px;
+  height: 60px;
+  font-size: 0.9rem;
+  writing-mode: tb-rl;
+  /* transform: rotate(-180deg); */
+  transition: 0.5s;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 40px;
+  color: transparent;
+  text-shadow: 0 0 0.5px rgba(0, 0, 0, 0.8);
+  /* background-color: #888; */
+  /* text-align: right; */
+  cursor: pointer;
+}
+
+.header .scrollRightBottom {
+  bottom: -25px;
+}
+
+.scrollRight i {
+  position: absolute;
+  right: 8px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  color: #1c1b20;
+  /* padding-bottom: 0.5rem; */
+  font-size: 1.4rem;
+  animation-name: move;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* background-color: #666; */
+}
+
+@keyframes move {
+  0% {
+    top: -25px;
+  }
+
+  100% {
+    top: -35px;
+  }
+}
+
+/* social */
+
+.social {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  width: 30px;
+  height: 80px;
+  /* background-color: #888; */
+  z-index: 100;
+  color: #1c1b20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35rem;
+}
+
+.social i.fab {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* app */
+
+.main {
+  background-color: #ff5851;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  transition: 1.1s ease-in-out;
+  transition-delay: 0.1s;
+  /* transition-timing-function: cubic-bezier(0.82, -0.07, 0.41, 1.02); */
+  transition-timing-function: cubic-bezier(0.82, -0.07, 0.25, 0.91);
+}
+
+.mainClick {
+  top: 0;
+  left: 80%;
+  width: 20%;
+}
+
+.scrollMain {
+  width: 100%;
+}
+
+.hello {
+  /* background-color: #777; */
+  display: block;
+  position: fixed;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  max-width: 100%;
+  min-width: 450px;
+  max-height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  transition: 1.1s ease-in-out, opacity 0.3s;
+  transition-timing-function: cubic-bezier(0.82, -0.07, 0.41, 1.02);
+}
+
+.scrollHello {
+  right: 0%;
+}
+
+.hello h1 {
+  margin: 0;
+  color: #1c1b20;
+  font-size: 16rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.hello h1.up {
+  display: block;
+  position: absolute;
+  left: -15%;
+  top: 30%;
+  transform: translate(50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  /* overflow: hidden; */
+}
+
+.hello h1.down {
+  display: block;
+  position: absolute;
+  left: -31%;
+  top: 65%;
+  transform: translate(50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  /* overflow: hidden; */
+}
+
+.hello span {
+  color: #ff5851;
+}
+
+/* intro */
+
+.intro {
+  /* background-color: #777; */
+  display: block;
+  position: fixed;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 46%;
+  max-height: 100%;
+  width: 600px;
+  height: 250px;
+  overflow: hidden;
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 1;
+  /* padding: 3%; */
+}
+
+.since {
+  position: relative;
+  top: 20%;
+  left: -50%;
+  font-style: sans-serif;
+  /* font-size: 1.2rem; */
+  font-size: 1.4rem;
+  font-style: italic;
+  /* padding-bottom: 3rem; */
+  transition: 0.5s ease, opacity 0.3s;
+  transition-delay: 0.6s;
+  opacity: 0;
+}
+
+.scrollSince {
+  left: 0%;
+  opacity: 1;
+}
+
+.sensi {
+  position: fixed;
+  top: 100%;
+  left: 0%;
+  /* background-color: yellow; */
+  transition: 0.5s ease, opacity 0.3s;
+  transition-delay: 0.6s;
+  opacity: 0;
+}
+
+.scrollSensi {
+  top: 40%;
+  opacity: 1;
+}
+
+.white {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  color: #fff;
+  transition: 0.5s ease, opacity 0.3s;
+  transition-delay: 0.6s;
+  opacity: 0;
+}
+
+/* middleArrow */
+
+.main .scrollMiddle {
+  position: fixed;
+  bottom: 100px;
+  right: 51%;
+  z-index: 100;
+  width: 30px;
+  height: 80px;
+  font-size: 1rem;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 40px;
+  color: transparent;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  /* background-color: #777; */
+  opacity: 1;
+  transition: opacity 0.5s, bottom 0.5s 0.5s;
+}
+
+.main .opacityMiddle {
+  opacity: 0;
+  bottom: -100px;
+}
+
+.scrollMiddle p {
+  color: #f8f8f8;
+}
+
+.scrollMiddle i {
+  color: #f8f8f8;
+  position: fixed;
+  top: -25px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  animation-name: move2;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move2 {
+  0% {
+    top: -25px;
+  }
+
+  100% {
+    top: -35px;
+  }
+}
+
+.scrollWhite {
+  top: 51%;
+  opacity: 1;
+}
+
+div.scroll {
+  height: 50vh;
+  width: 98vw;
+  /* background-color: rgb(52, 85, 230); */
+  background-image: url("../img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 145vh;
+  left: 0;
+  z-index: 10;
+}
+
+div.scroll1 {
+  height: 90vh;
+  width: 98vw;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 195vh;
+  /* top: 10vh; */
+  left: 0;
+  z-index: 10;
+  padding: 40px;
+  padding-left: 15%;
+  padding-top: 5%;
+  /* margin-left: 10%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll1 .title1 {
+  font-size: 9rem;
+  color: #ff5851;
+  font-weight: bolder;
+  /* padding-left: 10%; */
+  /* background-color: #888; */
+  width: 100%;
+  height: 280px;
+}
+
+.scroll1 .title1 p {
+  font-weight: bolder;
+  /* padding-left: 10%; */
+  height: 40%;
+}
+
+.scroll1Cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll1 .leftSpace {
+  width: 100%;
+  /* background-color: #777; */
+  padding: 20px 20px 20px 0px;
+  font-weight: bolder;
+}
+
+.scroll1 .leftSpace span {
+  color: #ff5851;
+}
+
+.scroll1 .leftSpace h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.scroll1 .leftSpace p {
+  padding-top: 40px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.scroll1 .rightSpace {
+  height: 600px;
+  width: 60%;
+  padding: 7%;
+  font-size: 1.4rem;
+  background-color: #1c1b20;
+  color: #d4d4d4;
+}
+
+div.scroll2 {
+  height: 100vh;
+  width: 98vw;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 280vh;
+  left: 0;
+  z-index: 10;
+  padding: 40px;
+  padding-left: 15%;
+  /* margin-left: 10%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll2 .title1 {
+  padding-top: 0;
+  font-size: 9rem;
+  color: #1c1b20;
+  font-weight: bolder;
+  /* padding-left: 10%; */
+  /* background-color: #888; */
+  width: 100%;
+  height: 280px;
+}
+
+.scroll2 .title1 p {
+  font-weight: bolder;
+  /* padding-left: 10%; */
+  height: 45%;
+}
+
+.scroll2 .scroll2Cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll2 .leftSpace {
+  width: 30%;
+  /* background-color: #777; */
+  padding: 20px 20px 20px 0px;
+  font-weight: bolder;
+}
+
+.scroll2LeftCont {
+  display: flex;
+  width: 30%;
+}
+
+.scroll2 .leftSpace .imgPort {
+  position: relative;
+  top: 0px;
+  left: -200px;
+  width: 550px;
+  height: 400px;
+  z-index: 10;
+  /* background-color: red; */
+  background-image: url("../img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scroll2 .leftSpace .imgPort a {
+  padding-top: 80%;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 300px;
+  z-index: 1000;
+  background-color: red;
+  color: #1c1b20;
+}
+
+.scroll2 .rightSpace h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 60px;
+}
+
+.scroll2 .rightSpace span {
+  color: #ff5851;
+}
+
+.scroll2 .leftSpace a {
+  display: block;
+  min-width: 350px;
+  max-width: 500px;
+  padding-top: 20px;
+  font-size: 1.7rem;
+  text-align: right;
+  font-weight: normal;
+  /* background-color: #999; */
+  text-decoration: none;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.scroll2 .leftSpace a:hover {
+  color: #ff5851;
+}
+
+.scroll2 .leftSpace a:visited {
+  color: #1c1b20;
+}
+
+.scroll2 .rightSpace {
+  width: 60%;
+  padding: 8%;
+  padding-top: 0;
+  /* margin-left: 0%; */
+  font-size: 1.4rem;
+  background-color: #f4f4f4;
+  /* background-color: #333; */
+  color: #1c1b20;
+}
+
+div.scroll3 {
+  height: 25vh;
+  width: 98vw;
+  background-color: #fff;
+  position: absolute;
+  top: 375vh;
+  /* top: 10vh; */
+  left: 0;
+  z-index: 10;
+  padding: 40px;
+}
+
+div.scroll3 .nameBottom {
+  font-size: 3rem;
+  color: #1c1b20;
+  font-weight: bold;
+  /* background-color: #888; */
+  display: block;
+  margin-left: 40%;
+}
+
+div.scroll3 .scroll3Contact {
+  display: block;
+  width: 95%;
+  /* background-color: red; */
+  font-size: 1.8rem;
+  text-align: right;
+}
+
+.phoneLand {
+  display: none;
+}
+
+.mCont {
+  display: none;
+}
+
+.mMenuButton {
+  display: none;
+}
+
+/* phone landscape */
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+  .pageHome {
+    display: none;
+  }
+
+  .phoneLand {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 2k */
+@media only screen and (min-width: 2049px) {
+
+  /* intro */
+  .intro {
+    font-size: 3.5rem;
+    width: 1000px;
+    height: 350px;
+  }
+
+  /* hello */
+  .since {
+    font-size: 1.7rem;
+  }
+
+  .hello {
+    min-height: 500px;
+    min-width: 600px;
+  }
+
+  .hello h1 {
+    font-size: 20rem;
+  }
+
+  .hello h1.up {
+    left: -16%;
+    top: 30%;
+  }
+
+  /* scroll1 */
+  .scroll1 .title1 {
+    font-size: 15rem;
+    /* height: 40%; */
+  }
+
+  .scroll1 .leftSpace h2 {
+    font-size: 5rem;
+  }
+
+  .scroll1 .leftSpace p {
+    padding-top: 40px;
+    font-size: 2.5rem;
+  }
+
+  .scroll1 .rightSpace {
+    padding: 4%;
+    font-size: 2rem;
+  }
+
+  /* scroll2 */
+  .scroll2 .title1 {
+    font-size: 15rem;
+  }
+
+  .scroll2 .leftSpace a {
+    font-size: 2.7rem;
+  }
+
+  .scroll2 .rightSpace h2 {
+    font-size: 5rem;
+    padding-bottom: 50px;
+  }
+
+  .scroll2 .rightSpace {
+    font-size: 2rem;
+    padding: 4%;
+  }
+
+  ul.menuNav {
+    font-size: 5rem;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+
+  /* borders */
+  div.pageHome div.borders div.top {
+    height: 60px;
+  }
+
+  div.pageHome div.borders div.bottom {
+    height: 60px;
+  }
+
+  .left {
+    width: 60px;
+  }
+
+  div.pageHome div.borders div.right {
+    width: 60px;
+  }
+
+  /* name */
+  .header .name {
+    top: 1%;
+    left: 1.3%;
+    font-size: 2.4rem;
+  }
+
+  /* social */
+  .social {
+    right: 8px;
+    font-size: 1.7rem;
+  }
+
+  /* scrollLeft */
+  .header .scrollLeft {
+    left: 20px;
+  }
+
+  /* scroll right */
+  .header .scrollRight {
+    right: 60px;
+  }
+
+  /* mainMenu */
+  .mainMenu {
+    left: 1%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  div.scroll1 {
+    height: 111vh;
+  }
+
+  .scroll1 .rightSpace {
+    height: 600px;
+    padding: 6%;
+  }
+
+  .scroll1 .title1 {
+    height: 230px;
+  }
+
+  .scroll2 .title1 {
+    height: 20%;
+  }
+
+  div.scroll2 {
+    height: 100vh;
+    top: 305vh;
+  }
+
+  div.scroll2 .title1 {
+    height: 180px;
+    padding-top: 0;
+  }
+
+  div.scroll2 .scroll2LeftCont a {
+    min-width: 320px;
+  }
+
+  div.scroll3 {
+    height: 15 vh;
+    top: 400vh;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (orientation: portrait) {
+  div.scroll1 {
+    height: 75vh;
+  }
+
+  .scroll1 .rightSpace {
+    height: 700px;
+  }
+
+  .scroll1 .title1 {
+    height: 20%;
+  }
+
+  .scroll2 .title1 {
+    height: 20%;
+  }
+
+  div.scroll2 {
+    height: 60vh;
+    top: 270vh;
+  }
+
+  div.scroll2 .title1 {
+    height: 180px;
+    padding-top: 0;
+  }
+
+  div.scroll3 {
+    height: 15vh;
+    top: 329vh;
+  }
+}
+
+@media only screen and (max-width: 769px) and (orientation: portrait) {
+  div.scroll1 {
+    height: 81vh;
+  }
+
+  .scroll1 .title1 {
+    height: 250px;
+  }
+
+  .scroll1 .rightSpace {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .scroll2 .title1 {
+    height: 20%;
+  }
+
+  div.scroll2 {
+    height: 80vh;
+    top: 275vh;
+  }
+
+  div.scroll2 .scroll2LeftCont a {
+    min-width: 235px;
+  }
+
+  div.scroll3 {
+    height: 20vh;
+    top: 345vh;
+  }
+
+  .scrollHello {
+    right: -30%;
+  }
+
+  /* intro */
+  .intro {
+    font-size: 2.5rem;
+    height: 550px;
+  }
+
+  .since {
+    position: relative;
+    top: 30%;
+  }
+
+  .scroll2 .leftSpace .imgPort {
+    left: -50px;
+    width: 300px;
+  }
+
+
+  @media only screen and (max-width: 767px) and (orientation: portrait) {
+    div.pageHome div.borders {
+      display: none;
+    }
+
+    div.scrollLeft,
+    div.scrollRight,
+    div.social,
+    div.mainMenu {
+      display: none;
+    }
+
+    .mMenuButton {
+      display: block;
+      position: fixed;
+      z-index: 102;
+      top: 2%;
+      right: 5%;
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      /* background-color: violet; */
+      color: #1c1b20;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2px #1c1b20;
+      cursor: pointer;
+    }
+
+    .mMenuButton i {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+    }
+
+    .header .name {
+      position: absolute;
+      top: 2.2%;
+      left: 1%;
+      font-size: 1.5rem;
+    }
+
+    .intro {
+      font-size: 2rem;
+      height: 230px;
+    }
+
+    .hello {
+      min-width: 380px;
+    }
+
+    .hello h1 {
+      font-size: 13rem;
+    }
+
+    .hello h1.up {
+      left: -15%;
+      top: 40%;
+    }
+
+    div.scroll,
+    div.scroll1,
+    div.scroll2,
+    div.scroll3 {
+      width: 100vw;
+    }
+
+    .scroll1 .title1 {
+      height: 30%;
+    }
+
+    .scroll2 .title1 {
+      height: 35%;
+    }
+  }
+
+  @media only screen and (max-width: 714px) and (orientation: portrait) {
+
+    div.scroll,
+    div.scroll1,
+    div.scroll2,
+    div.scroll3 {
+      display: none;
+    }
+
+    .divMenu {
+      left: -300%;
+    }
+
+    .hello {
+      min-width: 280px;
+      min-height: 320px;
+    }
+
+    .hello h1 {
+      font-size: 10rem;
+    }
+
+    .scrollHello {
+      right: -50%;
+    }
+
+    .intro {
+      font-size: 1.8rem;
+      height: 430px;
+    }
+
+    .mCont {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 200vh;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      height: 210vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mScroll {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 30vh;
+      background-image: url("../img/1.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .mScroll1 {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 60vh;
+    }
+
+    .mScroll1 .mTitle1 {
+      width: 100%;
+      font-size: 6rem;
+      font-weight: bolder;
+      padding: 5%;
+      padding-left: 15%;
+      color: #ff5851;
+    }
+
+    .mScroll1 .mTitle1 p {
+      height: 50px;
+    }
+
+    .mScroll1 .mLeftSpace {
+      width: 100%;
+      font-size: 1.3rem;
+      padding-bottom: 10px;
+      text-align: justify;
+      padding-left: 15%;
+      padding-right: 5%;
+    }
+
+    .mScroll1 .mLeftSpace h2 {
+      width: 50%;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      padding-bottom: 2%;
+    }
+
+    .mScroll1 .mLeftSpace h2 span {
+      color: #ff5851;
+    }
+
+    .mScroll1 .mRightSpace {
+      width: 100%;
+      font-size: 1.3rem;
+      padding-bottom: 10px;
+      text-align: justify;
+      background-color: #1c1b20;
+      color: #f4f4f4;
+      padding: 4%;
+      padding-left: 15%;
+      padding-right: 5%;
+    }
+
+    .mScroll2 {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .mScroll2 .mTitle1 {
+      width: 100%;
+      font-size: 6rem;
+      font-weight: bolder;
+      padding: 5%;
+      padding-left: 15%;
+      padding-bottom: 10%;
+    }
+
+    .mScroll2 .mTitle1 p {
+      height: 50px;
+    }
+
+    .mScroll2 .mImgPort {
+      width: 100%;
+      height: 40vh;
+      background-image: url("../img/2.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .mScroll2 .mLink {
+      text-align: right;
+      padding: 5%;
+      color: #1c1b20;
+    }
+
+    .mScroll2 .mLink a {
+      color: #1c1b20;
+    }
+
+    .mScroll2 .mLink a:visited {
+      color: #1c1b20;
+    }
+
+    .mScroll2 .mRightSpace {
+      width: 100%;
+      font-size: 1.3rem;
+      padding-bottom: 10px;
+      text-align: justify;
+      padding-left: 15%;
+      padding-right: 5%;
+    }
+
+    .mScroll2 .mRightSpace h2 {
+      width: 50%;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      padding-bottom: 10px;
+    }
+
+    .mScroll2 .mRightSpace h2 span {
+      color: #ff5851;
+    }
+
+    .mScroll3 {
+      background-color: #f4f4f4;
+      width: 100%;
+      height: 15vh;
+    }
+
+    .mScroll3 .mScroll3Contact {
+      text-align: right;
+      padding: 5%;
+    }
+
+    .mScroll3 .mScroll3Contact a {
+      color: #1c1b20
+    }
+
+    .mScroll3 .mScroll3Contact a:visited {
+      color: #1c1b20
+    }
+
+    .mScroll3 .mNameBottom {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+
+  @media only screen and (max-width: 415px) and (orientation: portrait) {
+    .intro {
+      font-size: 1.5rem;
+      height: 430px;
+    }
+
+    .mCont {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 200vh;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      /* height: 287vh; */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mScroll {
+      height: 30vh;
+    }
+
+    .mScroll1 {
+      /* background-color: #777; */
+      width: 100%;
+      height: 80vh;
+    }
+
+    .mScroll2 {
+      /* background-color: #666; */
+      width: 100%;
+      height: 97vh;
+    }
+
+    .mScroll3 {
+      /* background-color: #555; */
+      width: 100%;
+      height: 15vh;
+    }
+  }
+
+  @media only screen and (max-width: 376px) and (orientation: portrait) {
+    .intro {
+      font-size: 1.5rem;
+      height: 430px;
+    }
+
+    .mCont {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 200vh;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      /* height: 287vh; */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mScroll {
+      height: 30vh;
+    }
+
+    .mScroll1 {
+      /* background-color: #777; */
+      width: 100%;
+      height: 130vh;
+    }
+
+    .mScroll2 {
+      /* background-color: #666; */
+      width: 100%;
+      height: 130vh;
+    }
+
+    .mScroll3 {
+      /* background-color: #555; */
+      width: 100%;
+      height: 18vh;
+    }
+  }
